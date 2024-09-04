@@ -1,28 +1,23 @@
 <?php
 
 function calcular_descuento($total_compra) {
-    $descuento = 0;
-    
-    if ($total_compra >= 1000) {
-        $descuento = $total_compra * 0.15; 
-    } elseif ($total_compra >= 501) {
-        $descuento = $total_compra * 0.10; 
-    } elseif ($total_compra >= 100) {
-        $descuento = $total_compra * 0.05; 
+    if ($total_compra < 100) {
+        return 0;
+    } elseif ($total_compra >= 100 && $total_compra <= 500) {
+        return $total_compra * 0.05;
+    } elseif ($total_compra >= 501 && $total_compra <= 1000) {
+        return $total_compra * 0.10;
+    } else {
+        return $total_compra * 0.15;
     }
-    
-    return $descuento;
 }
-
 
 function aplicar_impuesto($subtotal) {
-    $impuesto = $subtotal * 0.07; /
-    return $impuesto;
+    return $subtotal * 0.07;
 }
-
 
 function calcular_total($subtotal, $descuento, $impuesto) {
-    $total = $subtotal - $descuento + $impuesto;
-    return $total;
+    return $subtotal - $descuento + $impuesto;
 }
 ?>
+
