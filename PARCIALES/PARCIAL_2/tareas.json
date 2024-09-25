@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "titulo": "Implementar API REST",
+        "descripcion": "Crear un API para manejar usuarios",
+        "estado": "pendiente",
+        "prioridad": 1,
+        "fechaCreacion": "2024-09-24",
+        "tipo": "Desarrollo",
+        "lenguajeProgramacion": "PHP"
+    },
+    {
+        "id": 2,
+        "titulo": "Diseño de Logo",
+        "descripcion": "Crear un logo para el nuevo sitio web",
+        "estado": "en progreso",
+        "prioridad": 2,
+        "fechaCreacion": "2024-09-23",
+        "tipo": "Diseño",
+        "herramientaDiseno": "Photoshop"
+    },
+    {
+        "id": 3,
+        "titulo": "Testing de API",
+        "descripcion": "Realizar pruebas de funcionalidad en la API",
+        "estado": "completada",
+        "prioridad": 3,
+        "fechaCreacion": "2024-09-22",
+        "tipo": "Testing",
+        "tipoTest": "Funcional"
+    },
+    {
+        "id": 4,
+        "titulo": "Descanso corto",
+        "descripcion": "Tómate un break de 10 minutos",
+        "estado": "pendiente",
+        "prioridad": 5,
+        "fechaCreacion": "2024-09-24",
+        "tipo": "Break",
+        "duracion": 10,
+        "esObligatorio": true
+    }
+]
